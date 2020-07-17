@@ -1,0 +1,71 @@
+html, body{
+    height: 100%;
+    background-color: bisque;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+   height: 100%;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    border: 1px solid black;
+    background-color:burlywood;
+}
+
+label{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+thead{
+    font-weight: bold;
+}
+table{
+    text-align: center;
+}
+
+#inputs{
+  
+    width: 50%;
+    margin: auto;
+    height: auto;
+}
+
+h3{
+   text-align: center;
+    
+}
+
+.pair-container{
+    margin: 5px 5px;
+}
+
+table{
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: floralwhite;
+}
+
+tbody tr:nth-child(odd){
+    background-color: burlywood;
+}
+
+tbody tr:nth-child(even){
+    background-color: floralwhite;
+}
+
+td{
+    width: 20%;
+    border: 1px solid black;
+}

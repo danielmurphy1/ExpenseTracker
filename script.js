@@ -1,4 +1,4 @@
-const submit = document.getElementById("submit").addEventListener("click", function (event) {
+const submit = document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
     const tbody = document.getElementById("body");
     const row = document.createElement("tr");
@@ -24,4 +24,5 @@ const submit = document.getElementById("submit").addEventListener("click", funct
     deleteBtn.addEventListener("click", function () {
       row.remove();
     });
+    return false;
 });
