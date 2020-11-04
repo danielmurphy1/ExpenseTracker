@@ -1,28 +1,49 @@
-const submit = document.getElementById("form").addEventListener("submit", function (event) {
+document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
-    const tbody = document.getElementById("body");
-    const row = document.createElement("tr");
-    const date = document.getElementById("transaction-date").value;
+
     const type = document.getElementById("transaction-type");
-    const selectedType = type.options[type.selectedIndex].text;
-    const location = document.getElementById("location").value;
-    const description = document.getElementById("description").value;
-    const amount = document.getElementById("amount").value;
-    const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
-    const inputs = [date, selectedType, location, description, "$" + amount];
-    console.log(inputs);
-    for (let i = 0; i <= inputs.length-1; i++) {
-      const tdata = document.createElement("td");
-      const text = document.createTextNode(inputs[i]);
-      tdata.appendChild(text);
-      row.appendChild(tdata);
-      row.appendChild(deleteBtn);
-      tbody.appendChild(row);
+    const expense = {
+      date: document.getElementById("transaction-date").value, 
+      type: type.options[type.selectedIndex].text, 
+      location: document.getElementById("location").value, 
+      description: document.getElementById("description").value, 
+      amount: document.getElementById("amount").value
     }
+
+    const tableRow = createTableRow(expense);
+    
+    const deleteBtn = createDeleteButton(tableRow);
+    tableRow.appendChild(deleteBtn);
+
     document.getElementById("form").reset();
-    deleteBtn.addEventListener("click", function () {
-      row.remove();
-    });
+
     return false;
 });
+
+function createDeleteButton(row) {
+  const button = document.createElement("button");
+  button.textContent = "Delete";
+  button.addEventListener("click", function (e) {
+    row.remove();
+  });
+
+  return button;
+}
+
+function createTableRow(expense) {
+  const tbody = document.getElementById("body");
+  const row = document.createElement("tr");
+
+  const expenseKeys = Object.keys(expense);
+  for (let i = 0; i < expenseKeys.length; i++){
+    const key = expenseKeys[i];
+
+    const tdata = document.createElement("td");
+    const text = document.createTextNode(expense[key]);
+    tdata.appendChild(text);
+    row.appendChild(tdata);
+    tbody.appendChild(row);
+  }
+
+  return row;
+}
