@@ -18,8 +18,8 @@ I created this app to specifically to learn how to dynamically populate a web-ba
 
 In creating this app, I continued to build on my skills in DOM manipulation. I learned how to create multiple iterations of the same element dynamically in the DOM using a for loop and appending different values to each using an array during each iteration. 
 
-Update: I upddated the script file for this application to take advantage of the learning that I have done since I first created this application. I grouped together related variables into an object literal. Moreover, I refoctored the code into functions which makes the code easier to read and debug, which will also make expansion of the code easier should I choose to scale this application in the future. 
+Update: I updated the script file for this application to take advantage of the learning that I have done since I first created this application. I grouped together related variables into an object literal. Moreover, I refactored the code into functions which makes the code easier to read and debug, which will also make expansion of the code easier should I choose to scale this application in the future. 
 
 ### Author
 
-- Dan Murphy, Software Developer
+- Dan Murphy, Full-Stack Developer, https://www.linkedin.com/in/daniel-murphy-055/
