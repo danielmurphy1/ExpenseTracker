@@ -2,15 +2,16 @@
 
 _Simple Web Based Expense Tracker Written in HTML, CSS, and JavaScript_
 
+![ExpenseApp Screen](https://github.com/danielmurphy1/ExpenseTracker/blob/master/ScreenShot.JPG)
+
+Access the app [here](https://danielmurphy1.github.io/ExpenseTracker/)
+
+
+
 ## Instructions
 
 
 Add the details of each expense by filling out the required form. Click the "Add Expense" button to add the expense to the tracker. Once the expense populates, you can click the "Delete" button to delete the expense. All fields must be filled out to add an expense.
-
-
-Access the app [here](https://danielmurphy1.github.io/ExpenseTracker/)
-
-![ExpenseApp Screen](https://github.com/danielmurphy1/ExpenseTracker/blob/master/ScreenShot.JPG)
 
 ### Summary
 
